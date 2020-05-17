@@ -37,48 +37,32 @@ public class ThreadAeroporto extends Thread {
 		// 1s = 1000ms
 		int s = (int) ((Math.random() * 5001) + 3000);
 		// dorme 3 a 8 segundos
-		try {
-			sleep(s);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println("O avi„o " + nAviao + " se afastou apÛs " + (s / 1000) + " segundos");
+
+		System.out.println("O avi√£o " + nAviao + " se afastou ap√≥s " + (s / 1000) + " segundos");
 	}
 
 	private void decolar() {
 		// 1s = 1000ms
 		int s = (int) ((Math.random() * 3001) + 1000);
 		// dorme 1 a 4 segundos
-		try {
-			sleep(s);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println("O avi„o " + nAviao + " decolou apÛs " + (s / 1000) + " segundos sentido " + direcao);
+
+		System.out.println("O avi√£o " + nAviao + " decolou ap√≥s " + (s / 1000) + " segundos sentido " + direcao);
 	}
 
 	private void taxiar() {
 		// 1s = 1000ms
 		int s = (int) ((Math.random() * 5001) + 5000);
 		// dorme 5 a 10 segundos
-		try {
-			sleep(s);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println("O avi„o " + nAviao + " taxiou " + (s / 1000) + " segundos");
+
+		System.out.println("O avi√£o " + nAviao + " taxiou " + (s / 1000) + " segundos");
 	}
 
 	private void manobra() {
 		// 1s = 1000ms
 		int s = (int) ((Math.random() * 4001) + 3000);
 		// dorme 3 a 7 segundos
-		try {
-			sleep(s);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println("O avi„o " + nAviao + " manobrou apÛs " + (s / 1000) + " segundos");
+
+		System.out.println("O avi√£o " + nAviao + " manobrou ap√≥s " + (s / 1000) + " segundos");
 	}
 
 }
